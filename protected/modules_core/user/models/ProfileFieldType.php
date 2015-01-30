@@ -41,6 +41,8 @@ class ProfileFieldType extends CFormModel
             'ProfileFieldTypeSelect' => Yii::t('UserModule.models_ProfileFieldType', 'Select List'),
             'ProfileFieldTypeDateTime' => Yii::t('UserModule.models_ProfileFieldType', 'Datetime'),
             'ProfileFieldTypeBirthday' => Yii::t('UserModule.models_ProfileFieldType', 'Birthday'),
+            'ProfileFieldTypeCheckbox' => Yii::t('UserModule.models_ProfileFieldType', 'Checkbox'),
+            'ProfileFieldTypeRadioList' => Yii::t('UserModule.models_ProfileFieldType', 'Radio List'),
         );
     }
 
@@ -68,6 +70,7 @@ class ProfileFieldType extends CFormModel
                 $types[] = $instance;
             }
         }
+
         return $types;
     }
 
